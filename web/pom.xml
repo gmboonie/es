@@ -132,6 +132,11 @@
                         <artifactId>mysql-connector-java</artifactId>
                         <version>${mysql.version}</version>
                     </dependency>
+                    <dependency>
+                    	<groupId>commons-lang</groupId>
+                    	<artifactId>commons-lang</artifactId>
+                    	<version>2.4</version>
+                    </dependency>
                 </dependencies>
             </plugin>
 
@@ -231,7 +236,7 @@
                     <![CDATA[jdbc:mysql://localhost:3306/${db.name}?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8]]>
                 </connection.url>
                 <connection.username>root</connection.username>
-                <connection.password/>
+                <connection.password>root</connection.password>
                 <jpa.showSql>true</jpa.showSql>
                 <jpa.generateDdl>false</jpa.generateDdl>
                 <jpa.database>MYSQL</jpa.database>
@@ -283,16 +288,14 @@
                     <![CDATA[jdbc:mysql://localhost:3306/${db.name}?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8]]>
                 </connection.url>
                 <connection.username>root</connection.username>
-                <connection.password/>
+                <connection.password>root</connection.password>
                 <jpa.showSql>false</jpa.showSql>
                 <jpa.generateDdl>false</jpa.generateDdl>
                 <jpa.database>MYSQL</jpa.database>
                 <jpa.databasePlatform>org.hibernate.dialect.MySQL5InnoDBDialect</jpa.databasePlatform>
                 <log.dir>/data/backup/es</log.dir>
-
                 <shiro.uid.cookie.domain>sishuok.com</shiro.uid.cookie.domain>
                 <shiro.uid.cookie.path>/</shiro.uid.cookie.path>
-
             </properties>
         </profile>
 
